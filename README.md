@@ -6,12 +6,9 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
 import ListGroup from 'react-bootstrap/ListGroup';
   
+
   
-class App extends Component  {
-  constructor(props) {
-    super(props);
-  
-    // Setting up state
+     Setting up state
     this.state = {
       userInput : "",
       list:[]
@@ -49,9 +46,7 @@ class App extends Component  {
     }
   }
   
-  // Function to delete item from list use id to delete
-  deleteItem(key){
-    const list = [...this.state.list];
+
   
     // Filter values and leave value which we need to delete
     const updateList = list.filter(item => item.id !== key);
