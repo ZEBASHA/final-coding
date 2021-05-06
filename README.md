@@ -15,12 +15,6 @@ import ListGroup from 'react-bootstrap/ListGroup';
     }
   }
   
-  // Set a user input value
-  updateInput(value){
-    this.setState({
-      userInput: value,
-    });
-  }
   
   // Add item if user input in not empty
   addItem(){
